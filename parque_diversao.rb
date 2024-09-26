@@ -19,3 +19,16 @@ class Participante
 end
 
 class Parque
+  def initialize
+    @participantes = []
+  end
+
+  def cadastrar_participante(altura, passe_id)
+    novo_id = @participantes.length + 1
+    participante = Participante.new(novo_id, altura, passe_id)
+    @participantes << participante
+    puts "Participante cadastrado com sucesso!"
+    participante.mostrar_informacoes
+  end
+
+end
