@@ -9,5 +9,13 @@ class Participante
 
   def comprar_passe(novo_passe)
     @pssae_id = novo_passe
-    
+    puts "Participante ID: #{@id}. Novo Passe ID: #{@passe_id}"
   end
+
+  def revoga_passe
+    @passe_id = nil
+    puts "Passe revogado para o participante #{id}."
+  end
+end
+
+class Parque
