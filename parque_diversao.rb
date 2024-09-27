@@ -59,7 +59,7 @@ class Parque
   end
 end
 
-parque = Prque.new
+parque = Parque.new
 parque.cadastrar_participante(1.75, 1234)
 parque.cadastrar_participantes(1.60, 5678)
 
