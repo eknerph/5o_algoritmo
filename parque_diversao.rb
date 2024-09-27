@@ -31,4 +31,11 @@ class Parque
     participante.mostrar_informacoes
   end
 
+  def consultar_altura(id)
+    participante = @participantes.find { |p| p.id == id }
+    if participante
+      puts "Altura do participantes #{id}: #{participante.altura}"
+    else 
+      puts "Participante não encontrado."
+
 end
