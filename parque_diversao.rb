@@ -37,5 +37,28 @@ class Parque
       puts "Altura do participantes #{id}: #{participante.altura}"
     else 
       puts "Participante não encontrado."
+    end
+  end
 
+  def comprar_passe(id, passe_id)
+    participante = @participantes.find { |p| p.id == id }
+    if participante
+      participante.comprar_passe(passe_id)
+    else
+      puts "Participante não encontrado."
+    end
+  end
+
+  def revogar_passe(id)
+    participante = @participantes.find { |p| p.id == id }
+    if participante
+      participante.revogar_passe
+    else
+      puts "Participante não encontrado."
+    end
+  end
 end
+
+parque = Prque.new
+parque.cadastrar_participante(1.75, 1234)
+parque.cadastrar_participantes(1.60, 5678)
