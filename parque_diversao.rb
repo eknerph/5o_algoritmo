@@ -1,5 +1,5 @@
 class Participante
-  attr_acessor :id, :altura, :passe_id
+  attr_accessor :id, :altura, :passe_id
 
   def inicialize(id, altura, passe_id)
     @id = id
