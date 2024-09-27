@@ -62,3 +62,9 @@ end
 parque = Prque.new
 parque.cadastrar_participante(1.75, 1234)
 parque.cadastrar_participantes(1.60, 5678)
+
+parque.consultar_altura(1)
+
+parque.comprar_passe(1, 9999)
+
+parque.revogar_passe(1)
