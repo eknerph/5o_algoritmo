@@ -4,11 +4,11 @@ nota1 = gets.chomp.to_f
 print "Digite a segunda nota: "
 nota2 = gets.chomp.to_f
 
-media = (nota1 + nota2) / 2
+media = ((nota1 + nota2) / 2).round(2)
 puts "A Média das notas é: #{ media }"
 
-if
-   
+if media > 6
+
 
 
 
