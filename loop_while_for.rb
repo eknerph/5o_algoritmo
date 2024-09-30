@@ -34,7 +34,8 @@ puts "João vai empilhar 1000 tijolos, sendo 50 tijolos por vez."
 
 while tijolos_empilhados < tijolos_totais
   puts "João empilha 50 tijolos..."
-  tijolos_empilhados += 50
+  tijolos_empilhados += 25
   puts "João já empilhou #{ tijolos_empilhados } tijolos."
 end
 
+puts "João terminou de empilhar todos os 1000 tijolos!"
