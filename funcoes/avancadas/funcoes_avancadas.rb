@@ -33,3 +33,15 @@ def verificar_situacao(media)
     return "Reprovado"
   end
 end
+
+def processar_aluno(alunos)
+  alunos.each do |aluno|
+    nome = aluno[:nome]
+    notas = aluno[:notas]
+
+    media = calcular_media(notas)
+    situacao = verificar_situacao(media)
+
+    puts "Aluno: #{nome} - Média: #{media.round(2)} - Situação: #{situacao}"
+  end
+end
