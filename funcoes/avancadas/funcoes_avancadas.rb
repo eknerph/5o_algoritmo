@@ -10,3 +10,8 @@ def process_numbers(numbers)
 
   return squared_numbers
 end
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+resultado = process_numbers(numeros)
+
+puts "Os quadrados dos números pares são: #{resultado}"
