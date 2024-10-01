@@ -45,3 +45,12 @@ def processar_aluno(alunos)
     puts "Aluno: #{nome} - Média: #{media.round(2)} - Situação: #{situacao}"
   end
 end
+
+alunos = [
+  { nome: "Ana", notas: [8, 7.5, 9] },
+  { nome: "João", notas: [5, 6, 4] },
+  { nome: "Maria", notas: [9, 9.5, 8.7] },
+  { nome: "Pedro", notas: [3, 4.5, 5] }
+]
+
+processar_alunos(alunos)
