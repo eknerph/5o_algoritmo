@@ -12,6 +12,8 @@ end
 idade1 = classificar_idade(10)
 idade2 = classificar_idade(15)
 idade3 = classificar_idade(30)
+idade4 = classificar_idade(70)
+
 
 
 
