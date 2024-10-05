@@ -36,3 +36,6 @@ def jogar_adivinhacao()
 
   # Exibimos os números para o usuário saber a lista (pode ser escondido se quiser mais desafio)
   puts "Números gerados: #{ numeros.join(', ') }"
+
+
+end
