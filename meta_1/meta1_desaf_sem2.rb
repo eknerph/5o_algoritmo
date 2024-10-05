@@ -33,3 +33,6 @@ end
 
 def jogar_adivinhacao()
   numeros = Arrays.new(s) { rand(1..100) }
+
+  # Exibimos os números para o usuário saber a lista (pode ser escondido se quiser mais desafio)
+  puts "Números gerados: #{ numeros.join(', ') }"
