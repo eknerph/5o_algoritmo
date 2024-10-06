@@ -32,12 +32,12 @@ def maior_valor(numeros)
 end
 
 def jogar_adivinhacao()
-  numeros = Arrays.new(s) { rand(1..100) }
+  numeros = Array.new(5) { rand(1..100) }
 
   # Exibimos os números para o usuário saber a lista (pode ser escondido se quiser mais desafio)
   puts "Números gerados: #{ numeros.join(', ') }"
 
-  maior = maoir_valor(numeros)
+  maior = maior_valor(numeros)
 
   tentativas = 3
 
