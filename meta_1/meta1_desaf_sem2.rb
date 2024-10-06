@@ -44,11 +44,19 @@ def jogar_adivinhacao()
   while tentativas > 0
     puts "Tente adivinhar o maior número (Você tem #{ tentativas } tentativas(s)):"
     chute = gets.to_i
-    
-    
-    
-    
-    puts "Parabéns! Você acertou o maior número: #{ maior }"
 
+    if chute == maior
+      puts "Parabéns! Você acertou o maior número: #{ maior }"
+      break
+    else
+      puts "Não é o maior número."
+      tentativas -= 1
+    end
+  end
 
+  if tentativas == 0
+    puts "Suas tentativas acabaram! O maior número era: #{ maior }"
+  end
 end
+
+jogar_adivinhacao()
