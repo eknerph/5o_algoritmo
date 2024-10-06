@@ -42,7 +42,7 @@ def jogar_adivinhacao()
   tentativas = 3
 
   while tentativas > 0
-    puts "Tente adivinhar o maior número (Você tem #{ tentativas } tentativas(s)):"
+    puts "Tente adivinhar o maior número (Você tem #{ tentativas } tentativa(s)):"
     chute = gets.to_i
 
     if chute == maior
