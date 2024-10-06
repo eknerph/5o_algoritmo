@@ -3,6 +3,10 @@ def maior_valor(numeros)
   maior = numeros[0]
   numeros.each do |numero|
     if numero > maior
+       maior = numero
+    end
+
+    if numero < maior
       maior = numero
     end
   end
@@ -11,9 +15,9 @@ def maior_valor(numeros)
 end
 
 def jogar_adivinhacao()
-  numeros = Array.new(5) { rand(1..40) }
+  numeros = Array.new(10) { rand(1..40) }
   
-  puts "Uma lista de 5 números foi gerada aleatoriamente entre 1 e 40. Tente adivinhar o maior número!"
+  puts "Uma lista de 10 números foi gerada aleatoriamente entre 1 e 40. Tente adivinhar o maior número!"
 
   maior = maior_valor(numeros)
 
@@ -27,8 +31,8 @@ def jogar_adivinhacao()
       puts "Parabéns! Você acertou o maior número: #{ maior }"
       break
     elsif chute < maior
-      puts "O número é o maior do que o seu palpite!"
-    else
+      puts "O número é maior do que o seu palpite!"
+    else 
       puts "O número é menor do que o seu palpite!"
     end
     
