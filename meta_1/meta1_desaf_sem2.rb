@@ -37,5 +37,18 @@ def jogar_adivinhacao()
   # Exibimos os números para o usuário saber a lista (pode ser escondido se quiser mais desafio)
   puts "Números gerados: #{ numeros.join(', ') }"
 
+  maior = maoir_valor(numeros)
+
+  tentativas = 3
+
+  while tentativas > 0
+    puts "Tente adivinhar o maior número (Você tem #{ tentativas } tentativas(s)):"
+    chute = gets.to_i
+    
+    
+    
+    
+    puts "Parabéns! Você acertou o maior número: #{ maior }"
+
 
 end
