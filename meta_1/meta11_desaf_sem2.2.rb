@@ -23,4 +23,13 @@ def jogar_adivinhacao()
     puts "Tente adivinhar o maior número (Você tem #{ tentativas } tentativa(s)):"
     chute = gets.to_i
 
+    if chute == maior
+      puts "Parabéns! Você acertou o maior número: #{ maior }"
+      break
+    elsif chute < maior
+      puts "O número é o maior do que o seu palpite!"
+    else
+      puts "O número é menor do que o seu palpite!"
+    end
     
+    tentativas -= 1
