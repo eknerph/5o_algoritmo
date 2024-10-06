@@ -15,7 +15,7 @@ def jogar_adivinhacao()
   
   puts "Uma lista de 5 números foi gerada aleatoriamente entre 1 e 40. Tente adivinhar o maior número!"
 
-  maior - maior_valor(numeros)
+  maior = maior_valor(numeros)
 
   tentativas = 10
 
