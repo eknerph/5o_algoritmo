@@ -33,3 +33,11 @@ def jogar_adivinhacao()
     end
     
     tentativas -= 1
+  end
+
+  if tentativas == 0
+    puts "Suas tentativas acabaram! Omaior número era: #{ maior }"
+  end
+end
+
+jogar_adivinhacao()
